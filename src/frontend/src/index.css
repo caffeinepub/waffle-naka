@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Warm waffle-shop palette - Light mode */
+        --background: 0.98 0.02 45;
+        --foreground: 0.25 0.04 35;
+        --card: 1 0.01 45;
+        --card-foreground: 0.25 0.04 35;
+        --popover: 1 0.01 45;
+        --popover-foreground: 0.25 0.04 35;
+        
+        /* Primary: Warm amber/caramel */
+        --primary: 0.55 0.15 45;
+        --primary-foreground: 0.98 0.02 45;
+        
+        /* Secondary: Cream */
+        --secondary: 0.95 0.03 50;
+        --secondary-foreground: 0.35 0.05 40;
+        
+        /* Muted: Light beige */
+        --muted: 0.93 0.02 50;
+        --muted-foreground: 0.50 0.03 40;
+        
+        /* Accent: Orange/strawberry */
+        --accent: 0.65 0.18 35;
+        --accent-foreground: 0.98 0.01 45;
+        
+        /* Destructive: Red */
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0.01 45;
+        
+        /* Borders and inputs */
+        --border: 0.88 0.03 45;
+        --input: 0.88 0.03 45;
+        --ring: 0.55 0.15 45;
+        
+        /* Charts */
+        --chart-1: 0.60 0.18 40;
+        --chart-2: 0.65 0.16 30;
+        --chart-3: 0.70 0.14 50;
+        --chart-4: 0.55 0.20 25;
+        --chart-5: 0.75 0.12 55;
+    }
+
+    .dark {
+        /* Dark mode - warm, cozy tones */
+        --background: 0.20 0.04 35;
+        --foreground: 0.95 0.02 50;
+        --card: 0.25 0.04 35;
+        --card-foreground: 0.95 0.02 50;
+        --popover: 0.22 0.04 35;
+        --popover-foreground: 0.95 0.02 50;
+        
+        /* Primary: Lighter amber for dark mode */
+        --primary: 0.75 0.14 50;
+        --primary-foreground: 0.20 0.04 35;
+        
+        /* Secondary: Dark cream */
+        --secondary: 0.30 0.04 40;
+        --secondary-foreground: 0.95 0.02 50;
+        
+        /* Muted: Dark beige */
+        --muted: 0.28 0.03 40;
+        --muted-foreground: 0.70 0.03 50;
+        
+        /* Accent: Bright orange for dark mode */
+        --accent: 0.70 0.20 40;
+        --accent-foreground: 0.95 0.02 50;
+        
+        /* Destructive */
+        --destructive: 0.60 0.24 30;
+        --destructive-foreground: 0.20 0.04 35;
+        
+        /* Borders and inputs */
+        --border: 0.35 0.04 40;
+        --input: 0.35 0.04 40;
+        --ring: 0.65 0.12 45;
+        
+        /* Charts */
+        --chart-1: 0.65 0.18 45;
+        --chart-2: 0.70 0.16 35;
+        --chart-3: 0.75 0.14 55;
+        --chart-4: 0.60 0.20 30;
+        --chart-5: 0.80 0.12 60;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}

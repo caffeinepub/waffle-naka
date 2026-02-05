@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [
+    "Shop owner login is not behaving correctly (reported regression/bug)."
+  ],
+  "isFixRequest": true,
+  "existing_features": [],
+  "new_feature_requests": [],
+  "projectName": "Untitled request",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

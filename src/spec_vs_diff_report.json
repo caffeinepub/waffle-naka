@@ -1,0 +1,36 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-05T17:45:36.657Z",
+  "summary": "The BuildRequest contains no stated requirements or acceptance criteria. The diff modifies the owner login page and updates project summary/state files, which are changes not requested by any documented requirements.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Owner login flow changes: added admin pre-check via `actor.isCallerAdmin()`, passcode authentication via `actor.authenticateAsOwner(passcode)`, UI/validation/error handling updates, and navigation/toast behavior.",
+      "reason": "No requirements were provided in the BuildRequest, so this functionality is not traceable to any requested change.",
+      "evidence": [
+        "frontend/src/pages/owner/OwnerLoginPage.tsx"
+      ]
+    },
+    {
+      "description": "Updated/generated frontend file summaries describing various app features and route/provider setup.",
+      "reason": "No requirements were provided; this documentation-like update is not requested.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Updated project state metadata indicating a known issue about shop owner login regression/bug and marking `isFixRequest: true`.",
+      "reason": "No requirements were provided that requested changes to project metadata/state tracking.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.78,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/pages/owner/OwnerLoginPage.tsx",
+    "project_state.json"
+  ]
+}
